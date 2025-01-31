@@ -1,0 +1,7 @@
+{
+    "name": "gigdates-serverless-r2",
+    "version": "2.0.0",
+    "description": "Gigdates.net runs on Netlify Functions",
+    "author": "mantis-gdn",
+    "license": "MIT"
+}

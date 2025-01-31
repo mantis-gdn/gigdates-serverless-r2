@@ -1,0 +1,31 @@
+[build]
+  publish = "public"
+  command = "echo No build command"
+  node_bundler = "esbuild"
+
+[dev]
+  publish = "public"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/themetri"
+  to = "/venue/met_ri"
+  status = 301
+
+[[redirects]]
+  from = "/venue/:id"
+  to = "/venue.html"
+  status = 200
+
+[[redirects]]
+  from = "/event/:id"
+  to = "/event.html"
+  status = 200
+
+[[redirects]]
+  from = "/band/:id/*"
+  to = "/band.html"
+  status = 200
+
+[functions]
+  directory = "netlify/functions"

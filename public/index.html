@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigdates.net - The Revival Begins Soon</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/main.js" defer></script>
+    <script>
+        window.toggleMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <div class="hero-section">
+        <h1>Experience the Best Live Events</h1>
+        <p>From concerts to festivals, discover unforgettable experiences happening.</p>
+        <button onclick="window.location.href='/bands'">Bands</button>
+        <button onclick="window.location.href='/events'">Events</button>
+        <button onclick="window.location.href='/venues'">Venues</button>
+    </div>    
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+</body>
+</html>
