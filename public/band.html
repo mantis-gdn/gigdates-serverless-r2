@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Gigdates.net</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/main.js" defer></script>
+    <script>
+        window.toggleMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Band Details Section -->
+        <div id="band-container">
+            <div class="band-header">
+                <h1>Band</h1>
+                <h1 id="band-name">Loading Band Name...</h1>
+                <p><span id="band-genre">Loading...</span></p>
+            </div>
+
+            <!-- Events Section -->
+            <div class="events-section">
+                <h2>Upcoming Events</h2>
+                <div id="band-events" class="events-grid">
+                    <!-- Events will be dynamically loaded here -->
+                </div>
+            </div>
+            <hr />
+            <h2>About</h2>
+            <p><span id="band-description">Loading...</span></p>
+            <div id="band-members">
+                <h3>Band Members</h3>
+                <ul id="band-members-list"></ul>
+            </div>
+            <div id="band-social">
+                <h3>Social Media</h3>
+                <p>
+                    <a id="band-facebook" href="#" target="_blank">Facebook</a> | 
+                    <a id="band-instagram" href="#" target="_blank">Instagram</a> | 
+                    <a id="band-website" href="#" target="_blank">Official Website</a>
+                </p>
+            </div>
+            <hr />
+            <h2>Interview by Mantis</h2>
+            <div class="band-interview">
+                <p><span id="band-interview">Loading...</span></p>
+            </div>
+            <hr />
+            <!-- Events Section -->
+            <div class="events-section">
+                <h2>Past Events</h2>
+                <div id="band-past-events" class="events-grid">
+                    <!-- Events will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/band.js"></script>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+</body>
+</html>

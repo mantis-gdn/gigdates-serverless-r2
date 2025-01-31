@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues Gigdates.net</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/main.js" defer></script>
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <div class="venues-header">
+        <h1>Venues</h1>
+        <p>Discover amazing venues!</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Venues Container -->
+        <div id="venues-container" class="events-grid">
+            <h1>Venues Loading...</h1>
+        </div>
+    </div>
+
+    <!-- Ensure this loads last -->
+    <script src="/scripts/venues.js" defer></script>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gigdates.net</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/main.js" defer></script>
+    <script>
+        window.toggleMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Band Details Section -->
+        <div id="band-container">
+            <div class="band-header">
+                <h1>Event</h1>
+            </div>
+            <!-- Event Details Section -->
+            <div id="event-container">
+                <p>Loading event details...</p>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/event.js"></script>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+</body>
+</html>

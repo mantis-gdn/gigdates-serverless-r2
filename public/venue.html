@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Gigdates.net</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/main.js" defer></script>
+    <script>
+        window.toggleMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Venue Details Section -->
+        <div id="venue-container">
+            <div class="venue-header">
+                <h1>Venue</h1>
+                <h1 id="venue-name">Loading Venue Name...</h1>
+                <div class="venue-details">
+                    <p id="venue-address"></p>
+                    <p id="venue-phone"></p>
+                </div>
+            </div>
+
+            <!-- Events Section -->
+            <div class="events-section">
+                <h2>Upcoming Events</h2>
+                <div id="venue-events" class="events-grid">
+                    <!-- Events will be dynamically loaded here -->
+                </div>
+            </div>
+            <hr />
+            <div class="venue-footer">
+                <h2>About</h2>
+                <p id="venue-description"></p>
+                <p id="venue-parking"></p>
+                <p id="venue-seating"></p>
+                <div id="venue-social"></div>
+                <br />
+            </div>
+            <hr />
+            <!-- Events Section -->
+            <div class="events-section">
+                <h2>Past Events</h2>
+                <div id="venue-past-events" class="events-grid">
+                    <!-- Events will be dynamically loaded here -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/scripts/venue.js"></script>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+</body>
+</html>
