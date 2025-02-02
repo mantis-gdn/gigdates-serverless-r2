@@ -251,6 +251,14 @@ nav a:hover {
     /* Subtle variation in color */
 }
 
+#venue-social {
+    text-align: center;
+}
+
+#band-social {
+    text-align: center;
+}
+
 /* Span styling */
 #band-genre {
     font-weight: bold;
