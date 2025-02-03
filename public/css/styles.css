@@ -267,8 +267,6 @@ nav a:hover {
     /* Accent color for emphasis */
     padding: 0.2rem 0.4rem;
     /* Add some padding around the text */
-    background: #1e1e1e;
-    /* Subtle background to highlight the text */
     border-radius: 4px;
     /* Smooth corners */
     display: inline-block;
