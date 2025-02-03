@@ -275,6 +275,24 @@ nav a:hover {
     /* Center text for consistency */
 }
 
+/* CTA Button Styling */
+.cta a {
+    display: inline-block; /* Makes it behave like a button */
+    font-weight: bold; /* Emphasize the text */
+    color: #ffffff; /* White text for contrast */
+    background-color: #007bff; /* Primary button color */
+    padding: 0.5rem 1rem; /* Comfortable padding */
+    border-radius: 6px; /* Smooth rounded corners */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Ensure text is centered */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.cta a:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
 /* Paragraph styling */
 p {
     font-size: 1rem;
